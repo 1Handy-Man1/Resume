@@ -15,10 +15,6 @@ main {
   min-height: 100vh;
 }
 
-ul {
-  list-style-type: none;
-}
-
 a {
   text-decoration: none;
 }
@@ -82,6 +78,7 @@ hr {
   border: #2E5090 solid 5px;
   margin-top: 2.5rem;
   border-radius: 25px;
+  width: 100%;
 }
 
 .header {
@@ -105,7 +102,6 @@ hr {
 }
 
 .Profile {
-  margin-top: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,6 +112,7 @@ hr {
 
 .Profile h2 {
   font-size: 3.25rem;
+  padding: 2rem;
 }
 
 .Profile p {
@@ -131,14 +128,15 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .Education h2 {
+  padding: 2rem;
   font-size: 3.25rem;
 }
 
-.Education .container {
+.Education .containEdu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,11 +150,166 @@ hr {
   margin-left: 5%;
 }
 
-.Education .container #second {
+.Education .containEdu #secEdu {
   margin-left: 5rem;
 }
 
-.Education .container h4 {
+.Education .containEdu h3 {
   text-align: center;
+}
+
+.Skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 3rem;
+}
+
+.Skills h2 {
+  padding: 2rem;
+  font-size: 3.25rem;
+}
+
+.Skills .containSkill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 20%;
+  width: 50%;
+}
+
+.Skills #secSkill {
+  margin-left: 20rem;
+}
+
+.Skills h3 {
+  text-align: center;
+  width: 15vw;
+}
+
+.Experience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.Experience h2 {
+  padding: 2rem;
+  font-size: 3.25rem;
+}
+
+.Experience p {
+  margin-left: 5rem;
+  font-size: 1.15rem;
+}
+
+@media only screen and (max-width: 1111px) {
+  .header #infoHead {
+    margin-left: 4rem;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .Skills #secSkill {
+    margin-left: 10rem;
+  }
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header #infoHead {
+    margin-left: 0;
+    text-align: center;
+  }
+  .header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Profile h2 {
+    text-align: center;
+  }
+  .Profile p {
+    margin-left: 0;
+  }
+  .Education {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0;
+  }
+  .Education h2 {
+    text-align: center;
+  }
+  .Skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0;
+  }
+  .Skills .containSkill {
+    margin-left: 0;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+  }
+  .Skills h2 {
+    text-align: center;
+  }
+  .Experience {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0;
+  }
+  .Experience h2 {
+    text-align: center;
+  }
+  .Experience p {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    margin: .5rem;
+  }
+  .Profile p {
+    text-align: center;
+  }
+  .Skills .containSkill {
+    margin-left: 2rem;
+    width: 90%;
+  }
+  .Experience p {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */

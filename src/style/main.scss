@@ -15,14 +15,12 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
   margin: 2rem;
+  // max-width: 500vw;
 }
 main {
   min-height: 100vh;
 }
 
-ul {
-  list-style-type: none;
-}
 a {
   text-decoration: none;
 }
@@ -82,11 +80,11 @@ h4 {
 // HOME PAGE
 // ~~~~~~~~~~~~~~~~~~
 
-
 hr {
   border: #2E5090 solid 5px;
   margin-top: 2.5rem;
   border-radius: 25px;
+  width: 100%;
 }
 
 .header {
@@ -104,11 +102,11 @@ hr {
 }
 
 .Profile {
-  margin-top: 4rem;
   display: flex;
   justify-content: space-between;
   h2 {
     font-size: 3.25rem;
+    padding: 2rem;
   }
   p {
     margin-left: 5rem;
@@ -120,24 +118,166 @@ hr {
 .Education {
   display: flex;
   flex-direction: row;
-  margin-top: 5rem;
+  margin-top: 3rem;
   h2 {
+    padding: 2rem;
     font-size: 3.25rem;
   }
-  .container {
+  .containEdu {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin-left: 5%;
-    // width: 50%;
-    #second {
+    #secEdu {
       margin-left: 5rem;
     }
-    h4 {
+    h3 {
       text-align: center;
     }
   }
 }
+
+.Skills {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+  h2 {
+    padding: 2rem;
+    font-size: 3.25rem;
+  }
+  .containSkill {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20%;
+    width: 50%;
+  }
+  #secSkill {
+    margin-left: 20rem;
+  }
+  h3 {
+    text-align: center;
+    width: 15vw;
+  }
+}
+
+
+.Experience {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  h2 {
+    padding: 2rem;
+    font-size: 3.25rem;
+  }
+  p {
+    margin-left: 5rem;
+    font-size: 1.15rem;
+  }
+}
+
+
+// ~~~~~~~~~~~~~~~~~~
+// Scalling to Computers, Tablet and Phones
+// ~~~~~~~~~~~~~~~~~~
+
+@media only screen and (max-width: 1111px) {
+  .header {
+    #infoHead {
+      margin-left: 4rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .Skills {
+    #secSkill {
+    margin-left: 10rem;
+  }
+  }
+  .header {
+    flex-direction: column;
+    #infoHead {
+      margin-left: 0;
+      text-align: center;
+    }
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .Profile {
+    flex-direction: column;
+    h2 {
+      text-align: center;
+    }
+    p {
+      margin-left: 0;
+    }
+  }
+  .Education {
+    flex-direction: column;
+    margin-top: 0;
+    h2 {
+      text-align: center;
+    }
+  }
+  .Skills {
+    flex-direction: column;
+    margin-top: 0;
+    .containSkill {
+      margin-left: 0;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+    h2 {
+      text-align: center;
+    }
+  }
+  .Experience {
+    flex-direction: column;
+    margin-top: 0;
+    h2 {
+      text-align: center;
+    }
+    p {
+      margin-left: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    margin: .5rem;
+  }
+  .Profile {
+    p {
+      text-align: center;
+    }
+  }
+  .Skills {
+    .containSkill {
+      margin-left: 2rem;
+      width: 90%;
+    }
+  }
+  .Experience {
+    p {
+      text-align: center;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

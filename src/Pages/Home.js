@@ -7,7 +7,7 @@ export default function Home(){
             
             <div className="header">
                 <div><img src={Me} alt="Me" /></div>
-                <div>
+                <div id="infoHead">
                     <h1>Hello, I'm Hanad Shippy</h1>
                     <p><b>MAILING ADDRESS:</b> Glendale AZ 85308</p>
                     <p><b>CONTACT INFO:</b> +1 480 717-7686 | hshippy21@gmail.com</p>
@@ -28,9 +28,9 @@ export default function Home(){
 
             <div className="Education">
                 <h2>Education</h2>
-                <div className="container">
+                <div className="containEdu">
                     <div>
-                        <h4>2018 - 2022</h4>
+                        <h3>2018 - 2022</h3>
                         <p>
                             In Deer Valley Highschool I was attending to Baseball: left outfield,
                             Soccer: Forward and Middle; in the first two years. I've also went to other extra
@@ -38,18 +38,59 @@ export default function Home(){
 
                         </p>
                     </div>
-                    <div id="second">
-                        <h4>2020 - 2022</h4>
+                    <div id="secEdu">
+                        <h3>2020 - 2022</h3>
                         <p>
                             This two-year interactive program from <b>West-MEC</b> prepares students for a career as software developers. 
                             The program teaches student how to design and build website. I've already been in a team that we build a website for the West-MEC student of Veterinarian and Cosmetology.
-                            Here for <a href="http://vet-project.herokuapp.com/"><b>Vet science</b></a> and <a href="https://github.com/TheCapn-MEC/wmCosmetology"><b>Github of the Cosmetology</b></a>
+                            Here for <a href="http://vet-project.herokuapp.com/"><b>Vet science</b></a> and Github of the  <a href="https://github.com/TheCapn-MEC/wmCosmetology"><b>Cosmetology</b></a>
                         </p>
                     </div>
                 </div>
             </div>
 
             <hr></hr>
+
+            <div className="Skills">
+                <h2>Skills</h2>
+                <div className="containSkill">
+                    <div>
+                        <h3>Soft Skills</h3>
+                        <ul>
+                            <li>Communications</li>
+                            <li>Flexibility</li>
+                            <li>Problem Solving</li>
+                            <li>Leadership</li>
+                            <li>Honesty</li>
+                            <li>Time Management</li>
+                            <li>Patience</li>
+                            <li>Willing to accept feedback</li>
+                        </ul>
+                    </div>
+                    <div id="secSkill">
+                        <h3>Hard Skills</h3>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>NodeJS</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <hr></hr>
+
+            <div className="Experience">
+                <h2>Experience</h2>
+                <p>
+                    I have 100 hours of volunteering from Glendale Foothills Library and Saint Mary
+                    Food Bank. 2 years of Coding of Web developement and problem solving question in West-MEC
+                    Notheast campus with hours of volunteering time with professional training. I have 4 years
+                    of Highschool education with taking 2 classes of College of Rio Salado and 2 years of West-MEC.
+                </p>
+            </div>
 
         </div>
     )
