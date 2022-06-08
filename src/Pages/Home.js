@@ -1,4 +1,8 @@
 import Me from "../Images/me.jpg";
+import DV from "../Images/Deer Valley.jpg";
+import TS from "../Images/Technical Skill.jpg";
+import WM from "../Images/West-MEC.jpg";
+import TA from "../Images/Tech Associate.jpg";
 import '../style/main.css';
 
 export default function Home(){
@@ -91,6 +95,46 @@ export default function Home(){
                     of Highschool education with taking 2 classes of College of Rio Salado and 2 years of West-MEC.
                 </p>
             </div>
+
+            <hr></hr>
+
+            <div className="Award">
+                <h2>Certifications</h2>
+                <div className="certColumn">
+                    <img className="item1" src={DV} alt="Deer"></img>
+                    <img className="item2" src={TS} alt="Software"></img>
+                    <img className="item3" src={WM} alt="West"></img>
+                    <img className="item4" src={TA} alt="Associate"></img>
+                </div>
+            </div>
+
+            {/* <div className="Award">
+                <h2>Certifications</h2>
+                <div className="grid1">
+                    <img src={DV} alt="Deer"></img>
+                    <img src={TS} alt="Software"></img>
+                </div>
+                <div className="grid2">
+                    <img src={WM} alt="West"></img>
+                    <img src={TA} alt="Associate"></img>
+                </div>
+            </div> */}
+
+            {/* <div className="Award">
+                <h2>Certifications</h2>
+
+                <div className="imgContain">
+                    <div className="imgRow">
+                        <img src={DV} alt="Me" id="imgR" />
+                        <img src={TS} alt="Me" id="imgS" />
+                    </div>
+                    <div className="imgRow">
+                        <img src={WM} alt="Me" id="imgS" />
+                        <img src={TA} alt="Me" id="imgR" />
+                    </div>
+                </div>
+                
+            </div> */}
 
         </div>
     )
